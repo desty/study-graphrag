@@ -88,6 +88,10 @@ plugins:
             Neo4j와 Cypher 입문: Neo4j and Cypher Basics
             "LLM으로 KG 구축 — 엔티티·관계 추출": "Building a KG with an LLM — Entity & Relation Extraction"
             시간 인식 그래프와 Graphiti: Time-Aware Graphs and Graphiti
+            Part 4. GraphRAG: Part 4. GraphRAG
+            "GraphRAG란 — 아키텍처와 인덱싱": "What GraphRAG Is — Architecture and Indexing"
+            "그래프 검색 전략 — 로컬 · 글로벌 · 커뮤니티 요약": "Graph Retrieval Strategies — Local, Global, Community Summaries"
+            벡터 RAG vs GraphRAG 직접 비교: Vector RAG vs GraphRAG, Head to Head
 
 markdown_extensions:
   - admonition
@@ -140,3 +144,7 @@ nav:
       - Neo4j와 Cypher 입문: part3/06-neo4j-cypher.md
       - "LLM으로 KG 구축 — 엔티티·관계 추출": part3/07-llm-extraction.md
       - 시간 인식 그래프와 Graphiti: part3/08-temporal-graphiti.md
+  - Part 4. GraphRAG:
+      - "GraphRAG란 — 아키텍처와 인덱싱": part4/09-what-is-graphrag.md
+      - "그래프 검색 전략 — 로컬 · 글로벌 · 커뮤니티 요약": part4/10-search-strategies.md
+      - 벡터 RAG vs GraphRAG 직접 비교: part4/11-vector-vs-graph.md
