@@ -81,6 +81,9 @@ plugins:
             벡터 RAG의 한계와 지식 그래프: The Limits of Vector RAG and Where Graphs Come In
             "온톨로지 · 지식 그래프 · 택소노미 — 용어 정리": "Ontology, Knowledge Graph, Taxonomy — Terms Sorted Out"
             "트리플과 그래프 데이터 모델 (RDF vs LPG)": "Triples and Graph Data Models (RDF vs LPG)"
+            "Part 2. 온톨로지 모델링": "Part 2. Ontology Modeling"
+            "온톨로지 설계 — 개념·관계·제약·계층": "Ontology Design — Concepts, Relations, Constraints, Hierarchy"
+            DB 스키마에서 온톨로지 추출하기: Extracting an Ontology from a DB Schema
 
 markdown_extensions:
   - admonition
@@ -126,3 +129,6 @@ nav:
       - 벡터 RAG의 한계와 지식 그래프: part1/01-why-graph.md
       - "온톨로지 · 지식 그래프 · 택소노미 — 용어 정리": part1/02-terms.md
       - "트리플과 그래프 데이터 모델 (RDF vs LPG)": part1/03-triples.md
+  - Part 2. 온톨로지 모델링:
+      - "온톨로지 설계 — 개념·관계·제약·계층": part2/04-ontology-design.md
+      - DB 스키마에서 온톨로지 추출하기: part2/05-from-schema.md
