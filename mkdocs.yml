@@ -84,6 +84,10 @@ plugins:
             "Part 2. 온톨로지 모델링": "Part 2. Ontology Modeling"
             "온톨로지 설계 — 개념·관계·제약·계층": "Ontology Design — Concepts, Relations, Constraints, Hierarchy"
             DB 스키마에서 온톨로지 추출하기: Extracting an Ontology from a DB Schema
+            "Part 3. 지식 그래프 구축": "Part 3. Building a Knowledge Graph"
+            Neo4j와 Cypher 입문: Neo4j and Cypher Basics
+            "LLM으로 KG 구축 — 엔티티·관계 추출": "Building a KG with an LLM — Entity & Relation Extraction"
+            시간 인식 그래프와 Graphiti: Time-Aware Graphs and Graphiti
 
 markdown_extensions:
   - admonition
@@ -132,3 +136,7 @@ nav:
   - Part 2. 온톨로지 모델링:
       - "온톨로지 설계 — 개념·관계·제약·계층": part2/04-ontology-design.md
       - DB 스키마에서 온톨로지 추출하기: part2/05-from-schema.md
+  - Part 3. 지식 그래프 구축:
+      - Neo4j와 Cypher 입문: part3/06-neo4j-cypher.md
+      - "LLM으로 KG 구축 — 엔티티·관계 추출": part3/07-llm-extraction.md
+      - 시간 인식 그래프와 Graphiti: part3/08-temporal-graphiti.md
