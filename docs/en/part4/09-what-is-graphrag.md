@@ -13,6 +13,9 @@
 
 ## 1. Concept — GraphRAG has two stages
 
+![GraphRAG architecture — indexing (offline) and query (online)](../assets/diagrams/ch9-graphrag-arch.svg#only-light)
+![GraphRAG architecture — indexing (offline) and query (online)](../assets/diagrams/ch9-graphrag-arch-dark.svg#only-dark)
+
 In [Ch 1](../part1/01-why-graph.md) we called GraphRAG "bolting the graph onto RAG to make connections retrievable." Like vector RAG, its structure splits into **offline indexing** and **online query.** The difference is that indexing builds not just embeddings but **the graph and its summaries.**
 
 ```text

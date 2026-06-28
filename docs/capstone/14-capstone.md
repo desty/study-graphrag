@@ -16,6 +16,9 @@
 
 ## 2. 파이프라인 — 5단계
 
+![캡스톤 — 도메인 KG + GraphRAG 파이프라인 5단계](../assets/diagrams/ch14-pipeline.svg#only-light)
+![캡스톤 — 도메인 KG + GraphRAG 파이프라인 5단계](../assets/diagrams/ch14-pipeline-dark.svg#only-dark)
+
 전체 그림은 이 코스를 그대로 따라간다.
 
 ```text

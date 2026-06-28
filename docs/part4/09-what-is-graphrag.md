@@ -13,6 +13,9 @@
 
 ## 1. 개념 — GraphRAG는 두 단계다
 
+![GraphRAG 아키텍처 — 인덱싱(오프라인)과 쿼리(온라인)](../assets/diagrams/ch9-graphrag-arch.svg#only-light)
+![GraphRAG 아키텍처 — 인덱싱(오프라인)과 쿼리(온라인)](../assets/diagrams/ch9-graphrag-arch-dark.svg#only-dark)
+
 [Ch 1](../part1/01-why-graph.md)에서 GraphRAG를 "그래프를 RAG에 붙여 연결을 검색 가능하게 만든 것"이라 했다. 구조는 벡터 RAG와 마찬가지로 **오프라인 인덱싱**과 **온라인 쿼리** 두 단계로 갈린다. 다른 건 인덱싱이 임베딩만 만드는 게 아니라 **그래프와 그 요약**까지 만든다는 점이다.
 
 ```text

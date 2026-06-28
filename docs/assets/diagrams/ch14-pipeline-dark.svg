@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" font-family="Pretendard, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0,0 10,3.5 0,7" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1000" height="250" fill="#020617"/>
+  <rect width="1000" height="250" fill="url(#grid)"/>
+  <text x="500" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#f1f5f9">캡스톤 — 도메인 KG + GraphRAG 파이프라인 5단계</text>
+
+  <rect x="24" y="80" width="172" height="96" rx="10" fill="rgba(167,139,250,0.15)" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="110" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#ddd6fe">① 온톨로지 설계</text>
+  <text x="110" y="134" text-anchor="middle" font-size="10" fill="#c4b5fd">컴피턴시 질문</text>
+  <text x="110" y="150" text-anchor="middle" font-size="10" fill="#c4b5fd">개념 · 관계</text>
+  <text x="110" y="168" text-anchor="middle" font-size="9" fill="#64748b" font-family="JetBrains Mono, monospace">Part 2</text>
+
+  <path d="M 196,128 L 218,128" stroke="#64748b" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="220" y="80" width="172" height="96" rx="10" fill="rgba(52,211,153,0.15)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="306" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#a7f3d0">② 그래프 구축</text>
+  <text x="306" y="134" text-anchor="middle" font-size="10" fill="#6ee7b7">DB 스키마 + LLM 추출</text>
+  <text x="306" y="150" text-anchor="middle" font-size="10" fill="#6ee7b7">Neo4j</text>
+  <text x="306" y="168" text-anchor="middle" font-size="9" fill="#64748b" font-family="JetBrains Mono, monospace">Part 3</text>
+
+  <path d="M 392,128 L 414,128" stroke="#64748b" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="416" y="80" width="172" height="96" rx="10" fill="rgba(251,146,60,0.15)" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="502" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#fed7aa">③ GraphRAG 인덱싱</text>
+  <text x="502" y="134" text-anchor="middle" font-size="10" fill="#fdba74">커뮤니티 탐지</text>
+  <text x="502" y="150" text-anchor="middle" font-size="10" fill="#fdba74">커뮤니티 요약</text>
+  <text x="502" y="168" text-anchor="middle" font-size="9" fill="#64748b" font-family="JetBrains Mono, monospace">Part 4</text>
+
+  <path d="M 588,128 L 610,128" stroke="#64748b" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="612" y="80" width="172" height="96" rx="10" fill="rgba(96,165,250,0.15)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="698" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#bfdbfe">④ 라우팅 검색</text>
+  <text x="698" y="134" text-anchor="middle" font-size="10" fill="#93c5fd">질문 분류 →</text>
+  <text x="698" y="150" text-anchor="middle" font-size="10" fill="#93c5fd">벡터 / 로컬 / 글로벌</text>
+  <text x="698" y="168" text-anchor="middle" font-size="9" fill="#64748b" font-family="JetBrains Mono, monospace">Part 4</text>
+
+  <path d="M 784,128 L 806,128" stroke="#64748b" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="808" y="80" width="168" height="96" rx="10" fill="rgba(202,138,4,0.18)" stroke="#eab308" stroke-width="1.5"/>
+  <text x="892" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#fde68a">⑤ 평가 · 운영</text>
+  <text x="892" y="134" text-anchor="middle" font-size="10" fill="#fcd34d">검색·답변 평가</text>
+  <text x="892" y="150" text-anchor="middle" font-size="10" fill="#fcd34d">증분 갱신</text>
+  <text x="892" y="168" text-anchor="middle" font-size="9" fill="#64748b" font-family="JetBrains Mono, monospace">Part 5</text>
+
+  <path d="M 892,176 C 892,212 110,212 110,180" stroke="#64748b" stroke-width="1.4" fill="none" stroke-dasharray="5,4" marker-end="url(#arr)"/>
+  <text x="500" y="228" text-anchor="middle" font-size="10" fill="#94a3b8">평가 결과로 온톨로지·추출·검색을 되먹임 — 그래프는 살아 있는 자산</text>
+</svg>

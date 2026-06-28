@@ -16,6 +16,9 @@ We've learned the pieces separately. The capstone ties them to one domain. Small
 
 ## 2. The pipeline — 5 stages
 
+![Capstone — domain KG + GraphRAG pipeline, 5 stages](../assets/diagrams/ch14-pipeline.svg#only-light)
+![Capstone — domain KG + GraphRAG pipeline, 5 stages](../assets/diagrams/ch14-pipeline-dark.svg#only-dark)
+
 The whole picture follows this course directly.
 
 ```text

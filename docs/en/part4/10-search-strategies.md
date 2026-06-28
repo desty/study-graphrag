@@ -13,6 +13,9 @@
 
 ## 1. Concept — the question decides the retrieval
 
+![Graph retrieval strategies — local, global, hybrid](../assets/diagrams/ch10-search.svg#only-light)
+![Graph retrieval strategies — local, global, hybrid](../assets/diagrams/ch10-search-dark.svg#only-dark)
+
 With the index ready (graph + community summaries), what remains is "what to pull when a question arrives." GraphRAG retrieval splits broadly in two by question type.
 
 - **Local** — "tell me about this entity/topic." Explore around a specific node.

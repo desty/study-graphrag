@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" font-family="Pretendard, -apple-system, BlinkMacSystemFont, sans-serif">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0,0 10,3.5 0,7" fill="#6b7280"/></marker>
+    <marker id="arr-o" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0,0 10,3.5 0,7" fill="#ea580c"/></marker>
+  </defs>
+  <rect width="1000" height="430" fill="#ffffff"/>
+  <rect width="1000" height="430" fill="url(#grid)"/>
+  <text x="500" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">GraphRAG 아키텍처 — 인덱싱(오프라인)과 쿼리(온라인)</text>
+
+  <rect x="30" y="60" width="940" height="140" rx="12" fill="rgba(234,88,12,0.04)" stroke="#ea580c" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="46" y="80" font-size="11" font-weight="700" fill="#ea580c" font-family="JetBrains Mono, monospace">① 인덱싱 — 오프라인, 한 번 · LLM 비용 큼</text>
+
+  <rect x="44" y="96" width="160" height="74" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="124" y="128" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">문서 · 청크</text>
+  <text x="124" y="146" text-anchor="middle" font-size="10" fill="#64748b">corpus → chunks</text>
+  <path d="M 204,133 L 228,133" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="230" y="96" width="160" height="74" rx="10" fill="#fef3e0" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="310" y="128" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">LLM 추출</text>
+  <text x="310" y="146" text-anchor="middle" font-size="10" fill="#c2410c">엔티티 · 관계</text>
+  <path d="M 390,133 L 414,133" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="416" y="96" width="160" height="74" rx="10" fill="#dcfce7" stroke="#059669" stroke-width="1.5"/>
+  <text x="496" y="128" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">지식 그래프</text>
+  <text x="496" y="146" text-anchor="middle" font-size="10" fill="#047857">nodes + edges</text>
+  <path d="M 576,133 L 600,133" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="602" y="96" width="160" height="74" rx="10" fill="#e3f2fd" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="682" y="128" text-anchor="middle" font-size="13" font-weight="700" fill="#0d47a1">커뮤니티 탐지</text>
+  <text x="682" y="146" text-anchor="middle" font-size="10" fill="#1e40af">Leiden 등</text>
+  <path d="M 762,133 L 786,133" stroke="#ea580c" stroke-width="1.8" fill="none" marker-end="url(#arr-o)"/>
+  <rect x="788" y="96" width="168" height="74" rx="10" fill="#fef3e0" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="872" y="128" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">커뮤니티 요약</text>
+  <text x="872" y="146" text-anchor="middle" font-size="10" fill="#c2410c">전역 질문의 열쇠</text>
+
+  <path d="M 496,200 L 496,236" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)" stroke-dasharray="4,3"/>
+  <text x="512" y="222" font-size="10" fill="#64748b">인덱스(그래프 + 요약)를 쿼리가 사용</text>
+
+  <rect x="30" y="244" width="940" height="150" rx="12" fill="rgba(37,99,235,0.04)" stroke="#2563eb" stroke-width="1" stroke-dasharray="8,4"/>
+  <text x="46" y="264" font-size="11" font-weight="700" fill="#2563eb" font-family="JetBrains Mono, monospace">② 쿼리 — 온라인, 매 질문</text>
+
+  <rect x="56" y="284" width="190" height="88" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="151" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">질문</text>
+  <text x="151" y="340" text-anchor="middle" font-size="10" fill="#4f46e5">로컬 / 글로벌 분류</text>
+  <path d="M 246,328 L 274,328" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="276" y="284" width="200" height="88" rx="10" fill="#dcfce7" stroke="#059669" stroke-width="1.5"/>
+  <text x="376" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">관련 엔티티 · 커뮤니티</text>
+  <text x="376" y="340" text-anchor="middle" font-size="10" fill="#047857">진입점 찾기</text>
+  <path d="M 476,328 L 504,328" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="506" y="284" width="200" height="88" rx="10" fill="#e3f2fd" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="606" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#0d47a1">그래프 컨텍스트</text>
+  <text x="606" y="340" text-anchor="middle" font-size="10" fill="#1e40af">관계 따라 확장 + 원문</text>
+  <path d="M 706,328 L 734,328" stroke="#6b7280" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+  <rect x="736" y="284" width="208" height="88" rx="10" fill="#fef3e0" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="840" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">LLM 답변</text>
+  <text x="840" y="340" text-anchor="middle" font-size="10" fill="#c2410c">근거 있는 응답</text>
+</svg>

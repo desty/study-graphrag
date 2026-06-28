@@ -11,6 +11,9 @@
 
 ---
 
+![Vector RAG vs knowledge graph — same question, where they diverge](../assets/diagrams/ch1-vector-vs-graph.svg#only-light)
+![Vector RAG vs knowledge graph — same question, where they diverge](../assets/diagrams/ch1-vector-vs-graph-dark.svg#only-dark)
+
 ## 1. Concept — vector search only knows "similar"
 
 Vector RAG is simple and powerful. Chunk documents and embed them, embed the question too, and pull the nearest chunks in vector space. For "find text that means something similar to this question," nothing beats it.

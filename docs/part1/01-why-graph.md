@@ -11,6 +11,9 @@
 
 ---
 
+![벡터 RAG vs 지식 그래프 — 같은 질문, 어디서 갈리나](../assets/diagrams/ch1-vector-vs-graph.svg#only-light)
+![벡터 RAG vs 지식 그래프 — 같은 질문, 어디서 갈리나](../assets/diagrams/ch1-vector-vs-graph-dark.svg#only-dark)
+
 ## 1. 개념 — 벡터 검색은 "비슷함"만 안다
 
 벡터 RAG는 단순하고 강력하다. 문서를 청크로 잘라 임베딩하고, 질문도 임베딩해서, 벡터 공간에서 가까운 청크를 끌어온다. "이 질문과 의미가 비슷한 글"을 찾는 데는 이만한 게 없다.
