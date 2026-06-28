@@ -1,0 +1,128 @@
+site_name: 지식 그래프와 GraphRAG
+site_description: 온톨로지부터 지식 그래프 구축, GraphRAG, 평가·프로덕션까지 — 손으로 만들어 보는 실전 코스
+site_author: desty
+site_url: https://desty.github.io/study-graphrag/
+repo_url: https://github.com/desty/study-graphrag
+repo_name: desty/study-graphrag
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Pretendard
+    code: JetBrains Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-4L031NBC3Z
+  alternate:
+    - name: 한국어
+      link: /study-graphrag/
+      lang: ko
+    - name: English
+      link: /study-graphrag/en/
+      lang: en
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      languages:
+        - locale: ko
+          default: true
+          name: 한국어
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: Knowledge Graphs & GraphRAG
+          nav_translations:
+            홈: Home
+            소개: About
+            학습 시스템: Learning System
+            학습 내용: Curriculum
+            "Part 1. 왜 지식 그래프인가": "Part 1. Why Knowledge Graphs"
+            벡터 RAG의 한계와 지식 그래프: The Limits of Vector RAG and Where Graphs Come In
+            "온톨로지 · 지식 그래프 · 택소노미 — 용어 정리": "Ontology, Knowledge Graph, Taxonomy — Terms Sorted Out"
+            "트리플과 그래프 데이터 모델 (RDF vs LPG)": "Triples and Graph Data Models (RDF vs LPG)"
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 홈: index.md
+  - 소개:
+      - 학습 시스템: about/system.md
+      - 학습 내용: about/curriculum.md
+  - Part 1. 왜 지식 그래프인가:
+      - 벡터 RAG의 한계와 지식 그래프: part1/01-why-graph.md
+      - "온톨로지 · 지식 그래프 · 택소노미 — 용어 정리": part1/02-terms.md
+      - "트리플과 그래프 데이터 모델 (RDF vs LPG)": part1/03-triples.md
