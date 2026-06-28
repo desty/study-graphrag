@@ -92,6 +92,11 @@ plugins:
             "GraphRAG란 — 아키텍처와 인덱싱": "What GraphRAG Is — Architecture and Indexing"
             "그래프 검색 전략 — 로컬 · 글로벌 · 커뮤니티 요약": "Graph Retrieval Strategies — Local, Global, Community Summaries"
             벡터 RAG vs GraphRAG 직접 비교: Vector RAG vs GraphRAG, Head to Head
+            "Part 5. 평가와 프로덕션": "Part 5. Evaluation and Production"
+            "GraphRAG 평가 — 무엇을, 어떻게 측정하나": "Evaluating GraphRAG — What and How to Measure"
+            "프로덕션 — 그래프 갱신 · 비용 · 지연": "Production — Graph Updates, Cost, Latency"
+            캡스톤: Capstone
+            "도메인 지식 그래프 + GraphRAG 파이프라인": "A Domain Knowledge Graph + GraphRAG Pipeline"
 
 markdown_extensions:
   - admonition
@@ -148,3 +153,8 @@ nav:
       - "GraphRAG란 — 아키텍처와 인덱싱": part4/09-what-is-graphrag.md
       - "그래프 검색 전략 — 로컬 · 글로벌 · 커뮤니티 요약": part4/10-search-strategies.md
       - 벡터 RAG vs GraphRAG 직접 비교: part4/11-vector-vs-graph.md
+  - Part 5. 평가와 프로덕션:
+      - "GraphRAG 평가 — 무엇을, 어떻게 측정하나": part5/12-evaluation.md
+      - "프로덕션 — 그래프 갱신 · 비용 · 지연": part5/13-production.md
+  - 캡스톤:
+      - "도메인 지식 그래프 + GraphRAG 파이프라인": capstone/14-capstone.md

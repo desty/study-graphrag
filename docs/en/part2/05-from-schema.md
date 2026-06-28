@@ -73,7 +73,7 @@ When the schema is large you can hand the mapping to an LLM. Give it the DDL (`C
 
 ### Next
 
-On to Part 3, where we actually build the graph. First, making and querying nodes/relations with Neo4j and Cypher (coming soon).
+On to Part 3, where we actually build the graph. First, making and querying nodes/relations with Neo4j and Cypher → [Ch 6](../part3/06-neo4j-cypher.md).
 
 ---
 

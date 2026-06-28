@@ -73,7 +73,7 @@ TABLE order_items(order_id→FK, product_id→FK, qty, price)
 
 ### 다음
 
-Part 3로 넘어가 실제로 그래프를 짓는다. 먼저 Neo4j와 Cypher로 노드·관계를 만들고 질의하는 법부터 다룬다(곧 공개).
+Part 3로 넘어가 실제로 그래프를 짓는다. 먼저 Neo4j와 Cypher로 노드·관계를 만들고 질의하는 법부터 → [Ch 6](../part3/06-neo4j-cypher.md).
 
 ---
 

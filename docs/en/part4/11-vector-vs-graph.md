@@ -101,7 +101,7 @@ This is the same spirit as the [AI Eval Guide](https://desty.github.io/ai-eval-g
 
 ### Next
 
-On to Part 5, where we turn this comparison into systematic **evaluation** — what and how to measure GraphRAG (coming soon).
+On to Part 5, where we turn this comparison into systematic **evaluation** — what and how to measure GraphRAG → [Ch 12](../part5/12-evaluation.md).
 
 ---
 

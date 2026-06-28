@@ -81,7 +81,7 @@ await g.add_episode(name="profile", episode_body="Sujin Lee now prefers a trackp
 
 ### Next
 
-The graph is ready. In Part 4 we bolt it onto RAG — starting with the GraphRAG architecture (coming soon).
+The graph is ready. In Part 4 we bolt it onto RAG — starting with the GraphRAG architecture → [Ch 9](../part4/09-what-is-graphrag.md).
 
 ---
 
